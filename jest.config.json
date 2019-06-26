@@ -9,6 +9,9 @@
         "js",
         "json"
     ],
-    "reporters": ["default", ["jest-junit", { "output": "<rootDir>/reports/junit/js-test-results.xml" }]]
+    "reporters": ["default", ["jest-junit", { "output": "<rootDir>/reports/junit/js-test-results.xml" }]],
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/reports/coverage",
+    "coverageReporters": ["json", "html"]
 }
 
