@@ -1,0 +1,14 @@
+{
+    "transform": {
+        ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js",
+        "json"
+    ],
+    "reporters": ["default", ["jest-junit", { "output": "<rootDir>/reports/junit/js-test-results.xml" }]]
+}
+

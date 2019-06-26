@@ -1,0 +1,10 @@
+{
+  "linters": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint:fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "ignore": ["src/**/*.test.ts"]
+}

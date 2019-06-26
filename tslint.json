@@ -1,0 +1,20 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-console": true,
+        "interface-name": [true, "never-prefix"],
+        "quotemark": [true, "single", "jsx-double"],
+        "semicolon": [false],
+        "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+        "no-empty": false,
+        "await-promise": true,
+        "no-floating-promises": true,
+        "arrow-parens": false
+    },
+    "rulesDirectory": []
+}
+
