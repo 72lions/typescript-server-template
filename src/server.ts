@@ -1,3 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production'
+import { start } from '@google-cloud/profiler'
+if (isProd) {
+  start().catch()
+}
 import compression from 'compression'
 import * as dotenv from 'dotenv'
 import express, {
@@ -47,7 +52,6 @@ const bootstrap = async () => {
   )
 
   const port = process.env.PORT || 8080
-  const isProd = process.env.NODE_ENV === 'production'
 
   log.info(`isProduction: ${isProd}`)
 
