@@ -51,9 +51,9 @@ const bootstrap = async () => {
     },
   )
 
-  const port = process.env.PORT || 8080
-
   log.info(`isProduction: ${isProd}`)
+
+  const port = process.env.PORT || 8080
 
   app.listen(port, () => {
     log.info(`Server started on port ${port}!`)
