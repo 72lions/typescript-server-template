@@ -15,7 +15,8 @@ import express, {
 import log4js from 'log4js'
 import morgan from 'morgan'
 import { Z_DEFAULT_COMPRESSION } from 'zlib'
-import healthcheckRouter from './routes/healthcheck.route'
+import healthcheckRouter from './routes/healthcheck.router'
+import helloWorldRouter from './routes/helloworld.router'
 
 dotenv.config()
 
@@ -36,6 +37,7 @@ const bootstrap = async () => {
    */
 
   app.use('/', healthcheckRouter)
+  app.use('/', helloWorldRouter)
 
   /**
    * End of your routes and middlewares go here
